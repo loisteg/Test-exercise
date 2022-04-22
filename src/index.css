@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import "./styles/_fonts.scss";
+
+body {
+  margin: 0;
+  font-family: "Lato", "Lucida Grande", sans-serif;
+}
