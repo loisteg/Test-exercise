@@ -33,8 +33,9 @@ const getTeamArticlesDescription = (teamId: number): string => {
   teams.map((item) => {
     if (item.id === teamId) {
       item.members.forEach((member) => {
-        const nameOfPersone = authors.filter((item) => item.id === member)[0]
-          .name;
+        const nameOfPersone: string = authors.filter(
+          (item) => item.id === member
+        )[0].name;
 
         articles.forEach((article) => {
           if (article.authors?.includes(member)) {
@@ -56,7 +57,7 @@ const getTeamArticlesDescription = (teamId: number): string => {
     const idx = Object.keys(information);
 
     for (let i = 0; i < idx.length; i++) {
-      let objectWithIdx = information[idx[i]];
+      let objectWithIdx: string = information[idx[i]];
 
       string +=
         objectWithIdx.length === 0
